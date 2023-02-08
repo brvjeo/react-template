@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "jsx": "react",
+        "baseUrl": ".",
+        "paths": {
+            "@components/*" : ["src/components/*"],
+            "@features/*": ["features/*"],
+            "@services/*": ["services/*"],
+            "@styles/*": ["styles/*"],
+            "@assets/*": ["assets/*"],
+            "@data/*": ["data/*"],
+            "@store/*": ["store/*"],
+            "@hooks/*": ["hooks/*"],
+            "@utils/*": ["utils/*"],
+            "@pages/*": ["pages/*"],
+            "@types/*": ["types/*"]
+        }
+    }
+}
