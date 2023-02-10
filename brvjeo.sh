@@ -2,9 +2,13 @@
 
 git clone https://github.com/brvjeo/react-template.git
 
-cp -r ./react-template/* .
+cp -r ./react-template .
 
 rm -rf ./react-template
+
+rm .gitignore
+
+rm .DS_Store
 
 rm README.md
 
