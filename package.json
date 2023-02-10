@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "cross-env NODE_ENV=production ../webpack-template/node_modules/.bin/webpack --config webpack.config.js",
-    "start": "cross-env NODE_ENV=development ../webpack-template/node_modules/.bin/webpack-dev-server --config webpack.config.js",
+    "build": "cross-env NODE_ENV=production node_modules/.bin/webpack --config webpack.config.js",
+    "start": "cross-env NODE_ENV=development node_modules/.bin/webpack-dev-server --config webpack.config.js",
     "prettier": "prettier --write src/**/*.{js,jsx,ts,tsx}",
     "initialize": "mkdir -p src/{features,services,styles,assets,data,store,hooks,utils,pages,types}"
   },

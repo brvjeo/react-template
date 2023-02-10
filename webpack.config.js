@@ -6,7 +6,7 @@ const webpack = require('webpack');
 const isDev = `${process.env.NODE_ENV}` === 'development';
 
 module.exports = {
-	entry: path.resolve(__dirname, 'src/index.tsx'),
+	entry: path.resolve(__dirname, 'index.tsx'),
 	output: {
 		filename: isDev ? '[name].js' : '[name].[contenthash].js',
 		path: path.resolve(__dirname, 'build'),
