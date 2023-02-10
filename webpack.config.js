@@ -1,13 +1,14 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
 
 const isDev = `${process.env.NODE_ENV}` === 'development';
 
 module.exports = {
-	entry: './src/index.tsx',
+	entry: path.resolve(__dirname, 'src/index.tsx'),
 	output: {
-		filename: isDev ? '[name].js' : '[name][contenthash].js',
+		filename: isDev ? '[name].js' : '[name].[contenthash].js',
 		path: path.resolve(__dirname, 'build'),
 		publicPath: '/',
 		assetModuleFilename: isDev ? 'assets/[name][ext]' : 'assets/[name][hash][ext]',
