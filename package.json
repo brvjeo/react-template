@@ -3,7 +3,7 @@
     "build": "cross-env NODE_ENV=production ../webpack-template/node_modules/.bin/webpack --config webpack.config.js",
     "start": "cross-env NODE_ENV=development ../webpack-template/node_modules/.bin/webpack-dev-server --config webpack.config.js",
     "prettier": "prettier --write src/**/*.{js,jsx,ts,tsx}",
-    "initialize": "mkdir -p src/{components,features,services,styles,assets,data,store,hooks,utils,pages,types}"
+    "initialize": "mkdir -p src/{features,services,styles,assets,data,store,hooks,utils,pages,types}"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
