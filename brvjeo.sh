@@ -2,13 +2,11 @@
 
 git clone https://github.com/brvjeo/react-template.git
 
-cp -r ./react-template/. .
+cp -r ./react-template/* .
+
+cp ./react-template/.prettierrc .
 
 rm -rf ./react-template
-
-rm .gitignore
-
-rm .DS_Store
 
 rm README.md
 
@@ -20,7 +18,7 @@ git init
 
 touch .gitignore
 
-echo -e "node_modules/\n.gitignore\nwebpack.config.js\nbabel.config.json\ntsconfig.json\n.prettierrc\npackage-lock.json" >> .gitignore
+echo -e "/node_modules\n.gitignore\nwebpack.config.js\nbabel.config.json\ntsconfig.json\n.prettierrc\npackage-lock.json\n/.idea" >> .gitignore
 
 npm run initialize
 
