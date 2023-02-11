@@ -1,9 +1,11 @@
 {
     "compilerOptions": {
+        "module": "ESNext",
         "moduleResolution": "node",
+        "target": "ES5",
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
-        "jsx": "react",
+        "jsx": "react-jsx",
         "baseUrl": ".",
         "paths": {
             "@components/*" : ["src/components/*"],
@@ -16,7 +18,15 @@
             "@hooks/*": ["hooks/*"],
             "@utils/*": ["utils/*"],
             "@pages/*": ["pages/*"],
-            "@types/*": ["types/*"]
+            "@types/*": ["types/*"],
+            "@context/*": ["context/*"]
+        },
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
         }
-    }
+    },
+    "include": ["src/**/*","Global.d.ts"],
+    "exclude": ["node_modules"]
 }
