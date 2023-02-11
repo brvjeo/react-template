@@ -28,5 +28,4 @@
         }
     },
     "include": ["src/**/*","Global.d.ts"],
-    "exclude": ["node_modules"]
 }
