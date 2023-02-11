@@ -18,7 +18,7 @@ git init
 
 touch .gitignore
 
-echo -e "/node_modules\n.gitignore\nwebpack.config.js\nbabel.config.json\ntsconfig.json\n.prettierrc\npackage-lock.json\n/.idea" >> .gitignore
+echo -e "/configuration\nGlobal.d.ts\n/node_modules\n.gitignore\nwebpack.config.ts\nbabel.config.json\ntsconfig.json\n.prettierrc\npackage-lock.json\n/.idea" >> .gitignore
 
 npm run initialize
 
