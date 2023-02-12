@@ -14,6 +14,7 @@ const createWebpackConfiguration = (options: WebpackBuildOptions): webpack.Confi
 		output: {
 			filename: options.isDev ? '[name].[contenthash].js' : '[name].js',
 			path: options.paths.build,
+			publicPath: '/',
 			clean: true,
 		},
 		resolve: {
