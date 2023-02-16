@@ -14,7 +14,7 @@ const createWebpackConfiguration = (options: WebpackBuildOptions): webpack.Confi
 		output: {
 			filename: options.isDev ? '[name].[contenthash].js' : '[name].js',
 			path: options.paths.build,
-			publicPath: '/',
+			publicPath: options.isDev ? '/' : undefined,
 			clean: true,
 		},
 		resolve: {
@@ -22,7 +22,7 @@ const createWebpackConfiguration = (options: WebpackBuildOptions): webpack.Confi
 			alias: aliasesBuilder(options),
 		},
 		devServer: options.isDev ? serverBuilder(options) : undefined,
-		devtool: options.isDev ? 'inline-source-map' : undefined,
+		devtool: options.isDev ? 'eval-source-map' : undefined,
 		module: {
 			rules: loadersBuilder(options),
 		},
