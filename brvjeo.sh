@@ -6,6 +6,8 @@ cp -r ./react-template/* .
 
 cp ./react-template/.prettierrc .
 
+cp ./react-template/.eslintrc.js .
+
 rm -rf ./react-template
 
 rm README.md
