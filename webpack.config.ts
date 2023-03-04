@@ -1,5 +1,8 @@
 import path from 'path';
-import { WebpackEnvironmentalVariable, WebpackPaths } from './configuration/types';
+import {
+	WebpackEnvironmentalVariable,
+	WebpackPaths,
+} from './configuration/types';
 import createConfig from './configuration';
 
 const paths: WebpackPaths = {

@@ -7,7 +7,7 @@ const loadersBuilder: WebpackBuilder<webpack.RuleSetRule[]> = ({ isDev }) => {
 		{
 			test: /\.s?css$/,
 			use: [
-				isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
+				MiniCssExtractPlugin.loader,
 				{
 					loader: 'css-loader',
 					options: {

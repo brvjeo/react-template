@@ -1,14 +1,14 @@
 {
     "compilerOptions": {
+        "baseUrl": "./src",
         "module": "ESNext",
         "moduleResolution": "node",
         "target": "ES5",
         "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true,
         "jsx": "react-jsx",
-        "baseUrl": ".",
         "paths": {
-            "@components/*" : ["src/components/*"],
+            "@/*": ["*"],
+            "@components/*" : ["components/*"],
             "@features/*": ["features/*"],
             "@services/*": ["services/*"],
             "@styles/*": ["styles/*"],
@@ -27,5 +27,4 @@
             "module": "CommonJS"
         }
     },
-    "include": ["src/**/*","Global.d.ts"],
 }
